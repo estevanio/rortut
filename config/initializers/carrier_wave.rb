@@ -3,8 +3,8 @@ if Rails.env.production?
     config.fog_credentials = {
       # Configuration for GCS
       :provider              => 'Google',
-      :aws_access_key_id     => ENV['GCS_ACCESS_KEY'],
-      :aws_secret_access_key => ENV['GCS_SECRET_KEY']
+      :google_storage_access_key_id     => ENV['GCS_ACCESS_KEY'],
+      :google_storage_secret_access_key => ENV['GCS_SECRET_KEY']
     }
     config.fog_directory     =  ENV['GCS_BUCKET']
   end
