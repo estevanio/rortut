@@ -21,4 +21,3 @@ class Micropost < ActiveRecord::Base
       end
     end
 end
-git commit -m "first commit"
